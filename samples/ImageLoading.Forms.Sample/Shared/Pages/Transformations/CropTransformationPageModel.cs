@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using FFImageLoading.Transformations;
 using FFImageLoading.Work;
 using Xamarin.Forms;
@@ -42,22 +43,22 @@ namespace FFImageLoading.Forms.Sample
 
         public double CurrentYOffset { get; set; }
 
-        public void OnPanUpdated(PanUpdatedEventArgs e)
-        {
-            if (e.StatusType == GestureStatus.Completed)
-            {
-                mX = CurrentXOffset;
-                mY = CurrentYOffset;
-            }
-            else if (e.StatusType == GestureStatus.Running)
-            {
-                CurrentXOffset = (e.TotalX * mRatioPan) + mX;
-                CurrentYOffset = (e.TotalY * mRatioPan) + mY;
-                ReloadImage();
-            }
-        }
+		public async Task OnPanUpdated(PanUpdatedEventArgs e)
+		{
+			if (e.StatusType == GestureStatus.Completed)
+			{
+				mX = CurrentXOffset;
+				mY = CurrentYOffset;
+			}
+			else if (e.StatusType == GestureStatus.Running)
+			{
+				CurrentXOffset = (e.TotalX * mRatioPan) + mX;
+				CurrentYOffset = (e.TotalY * mRatioPan) + mY;
+				ReloadImage();
+			}
+		}
 
-        public void OnPinchUpdated(PinchGestureUpdatedEventArgs e)
+		public async Task OnPinchUpdated(PinchGestureUpdatedEventArgs e)
         {
             if (e.Status == GestureStatus.Completed)
             {

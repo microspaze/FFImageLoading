@@ -7,6 +7,7 @@
     <ContentPage.Content>
         <StackLayout>
             <ffimageloading:CachedImage LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png"
+                WidthRequest="400" HeightRequest="400" Aspect="AspectFit"
                 Source = "{Binding ImageUrl}">
             </ffimageloading:CachedImage>
             <Button Text="Loading placeholder" Command="{Binding LoadingPlaceholderCommand}"/>

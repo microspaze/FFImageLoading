@@ -3,10 +3,10 @@
         xmlns:xamvvm="clr-namespace:Xamvvm;assembly=Xamvvm.Forms"
         xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
         xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
-        Title="FFImageLoading">
+        Title="FFImageLoading" NavigationPage.BackButtonTitle="">
     <ContentPage.Content>
 
-        <ListView HasUnevenRows="true" GroupDisplayBinding="{Binding Key}" IsGroupingEnabled="true"
+        <ListView HasUnevenRows="False" GroupDisplayBinding="{Binding Key}" IsGroupingEnabled="true"
                 SelectedItem="{Binding SelectedItem, Mode=TwoWay}" ItemsSource="{Binding Items}">
 
             <ListView.Behaviors>

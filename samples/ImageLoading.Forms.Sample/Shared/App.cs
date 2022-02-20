@@ -15,9 +15,6 @@ namespace FFImageLoading.Forms.Sample
                 { "CustomCacheKeyFactory", new CustomCacheKeyFactory() }
             };
 
-            CachedImage.FixedOnMeasureBehavior = true;
-            CachedImage.FixedAndroidMotionEventHandler = true;
-
             // Xamvvm init
             var factory = new XamvvmFormsFactory(this);
             factory.RegisterNavigationPage<MenuNavigationPageModel>(() => this.GetPageFromCache<MenuPageModel>());

@@ -13,8 +13,10 @@ namespace FFImageLoading.Forms.Sample.Pages
         public SvgListHeavyPage()
         {
             Title = "SVG HeavyList Demo";
+			NavigationPage.SetBackButtonTitle(this, "");
 
-            var listView = new ListView(ListViewCachingStrategy.RecycleElement)
+
+			var listView = new ListView(ListViewCachingStrategy.RecycleElement)
             {
                 ItemTemplate = new DataTemplate(typeof(SvgListHeavyCell)),
                 HasUnevenRows = false,

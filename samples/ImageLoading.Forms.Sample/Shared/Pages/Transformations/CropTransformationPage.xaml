@@ -11,6 +11,7 @@
                 <ffimageloading:CachedImage x:Name="image"
                     LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png"
                     Aspect="AspectFit" Source="{Binding ImageUrl}"
+                    WidthRequest="400" HeightRequest="400"
                     Transformations="{Binding Transformations}" CacheType="Disk">
 
                     <ffimageloading:CachedImage.GestureRecognizers>

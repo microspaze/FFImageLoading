@@ -9,9 +9,9 @@ namespace FFImageLoading.Forms.Sample.Pages
         {
         }
 
-        public string SvgString => "<svg height=\"100\" width=\"100\"><circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"#000\" stroke-width=\"3\" fill=\"#ccc\"/></svg>";
+        public string SvgString => "<svg height=\"100\" width=\"100\"><circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"#000\" stroke-width=\"3\" fill=\"#fff\"/></svg>";
 
-        public string SvgStringUrlFormat => "data:image/svg+xml,<svg height=\"100\" width=\"100\"><circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"#000\" stroke-width=\"3\" fill=\"#ccc\"/></svg>";
+        public string SvgStringUrlFormat => "data:image/svg+xml,<svg height=\"100\" width=\"100\"><circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"#000\" stroke-width=\"3\" fill=\"#555\"/></svg>";
 
         public void Reload()
         {

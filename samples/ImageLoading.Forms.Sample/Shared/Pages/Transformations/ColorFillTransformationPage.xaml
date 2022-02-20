@@ -11,9 +11,9 @@
                 <ffimageloading:CachedImage HorizontalOptions="Center" VerticalOptions="Center"
                     LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png" DownsampleToViewSize="true"
                     Aspect="AspectFit" HeightRequest="400" WidthRequest="400" 
-                                            Source="https://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png">
+                                            Source="https://gastaticqn.gatime.cn/placeholder.jpg">
                     <ffimageloading:CachedImage.Transformations>
-                        <fftransformations:ColorFillTransformation HexColor="#cccccc"/>
+                        <fftransformations:ColorFillTransformation HexColor="#ff4734"/>
                     </ffimageloading:CachedImage.Transformations>
                 </ffimageloading:CachedImage>
                 

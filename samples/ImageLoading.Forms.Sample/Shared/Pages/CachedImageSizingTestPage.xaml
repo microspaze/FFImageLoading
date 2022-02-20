@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:xamvvm="clr-namespace:Xamvvm;assembly=Xamvvm.Forms" xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations" x:Class="FFImageLoading.Forms.Sample.CachedImageSizingTestPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:xamvvm="clr-namespace:Xamvvm;assembly=Xamvvm.Forms" xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations" x:Class="FFImageLoading.Forms.Sample.CachedImageSizingTestPage"
+             Title="CachedImageSizingTest">
     <ScrollView>
         <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="16,32,16,16">
             <StackLayout Orientation="Horizontal">
@@ -49,7 +50,7 @@
                 </StackLayout>
                 
                 <StackLayout Grid.Column="1" Grid.Row="3" HorizontalOptions="FillAndExpand">
-                    <ffimageloading:CachedImage HorizontalOptions="Center" Source="ic_star_black_24dp" DownsampleToViewSize="true" WidthRequest="24"/>
+                    <ffimageloading:CachedImage HorizontalOptions="Center" Source="ic_star_black_24dp" DownsampleToViewSize="True" WidthRequest="24"/>
                 </StackLayout>
                 
             </Grid>
