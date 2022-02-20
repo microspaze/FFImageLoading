@@ -15,7 +15,7 @@ namespace FFImageLoading.Forms.Sample
 
 			ErrorPlaceholderCommand = new BaseCommand((arg) =>
 			{
-				ImageUrl = "http://notexisting.com/notexisting.png";
+				ImageUrl = "https://gastaticqn.gatime.cn/notexisting.jpg";
 			});
 		}
 

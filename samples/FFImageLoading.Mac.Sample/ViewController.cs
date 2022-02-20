@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 using AppKit;
 using Foundation;
@@ -20,7 +20,7 @@ namespace FFImageLoading.Mac.Sample
                 Frame = this.View.Bounds,
             };
             this.View.AddSubview(imageView);
-            ImageService.Instance.LoadUrl("https://raw.githubusercontent.com/recurser/exif-orientation-examples/master/Landscape_3.jpg").Into(imageView);
+            ImageService.Instance.LoadUrl("https://gastaticqn.gatime.cn/Landscape_3.jpg").Into(imageView);
         }
 
         public override NSObject RepresentedObject
