@@ -78,5 +78,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="..\FFImageLoading.Svg.Shared\FFImageLoading.Svg.Shared.projitems" Label="Shared" Condition="Exists('..\FFImageLoading.Svg.Shared\FFImageLoading.Svg.Shared.projitems')" />
+  <Import Project="..\FFImageLoading.Cross.Svg\FFImageLoading.Cross.Svg.projitems" Label="Shared" />
+  <Import Project="..\FFImageLoading.Cross\FFImageLoading.Cross.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
