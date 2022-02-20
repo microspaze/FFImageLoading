@@ -23,7 +23,7 @@ namespace FFImageLoading.Transformations
 
         public static UIImage ToSepia(UIImage source)
         {
-            using (var effect = new CISepiaTone() { Image = source.CGImage })
+            using (var effect = new CISepiaTone() { InputImage = source.CGImage })
             using (var output = effect.OutputImage)
             using (var context = CIContext.FromOptions(null))
             using (var cgimage = context.CreateCGImage(output, output.Extent))

@@ -18,8 +18,9 @@ namespace FFImageLoading.Forms.Sample
                 HasUnevenRows = false,
                 RowHeight = 110,
             };
-            listView.SetBinding<ListHeavyPageModel>(ListView.ItemsSourceProperty, v => v.Items);
-
+			//Obsolete
+			//listView.SetBinding<ListHeavyPageModel>(ListView.ItemsSourceProperty, v => v.Items);
+			listView.SetBinding(ListView.ItemsSourceProperty, "Items", BindingMode.OneWay);
             listView.ItemSelected += (sender, e) => { listView.SelectedItem = null; };
 
             Content = listView;
