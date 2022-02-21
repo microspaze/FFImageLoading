@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard1.1</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
     <NetStandardImplicitPackageVersion>2.0.2</NetStandardImplicitPackageVersion>        
     <AssemblyName>FFImageLoading.Forms</AssemblyName>
     <PackageId>FFImageLoading.Forms</PackageId>
@@ -42,7 +42,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.Portable.Compatibility" Version="1.0.1" />
-    <PackageReference Include="Xamarin.Forms" Version="3.6.0.344457" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
   </ItemGroup>
 
   <ItemGroup>
