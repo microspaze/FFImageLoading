@@ -64,7 +64,7 @@ namespace FFImageLoading.Work
                     return new GifDecoder();
 
                 case ImageInformation.ImageType.WEBP:
-                    return _webpDecoder;
+                    //return _webpDecoder;
 
                 default:
                     return new BaseDecoder();
