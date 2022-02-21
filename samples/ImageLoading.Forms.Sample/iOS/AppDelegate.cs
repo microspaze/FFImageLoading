@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using FFImageLoading.Forms.Platform;
 using Foundation;
 using UIKit;
@@ -16,13 +18,16 @@ namespace FFImageLoading.Forms.Sample.iOS
             CachedImageRenderer.Init();
 			CachedImageRenderer.InitImageSourceHandler();
 
-            var config = new FFImageLoading.Config.Configuration()
+			//HttpClient httpClient = new HttpClient();
+			//httpClient.DefaultRequestHeaders.AcceptEncoding.Add(new StringWithQualityHeaderValue("gzip"));
+			var config = new FFImageLoading.Config.Configuration()
             {
                 VerboseLogging = false,
                 VerbosePerformanceLogging = false,
                 VerboseMemoryCacheLogging = false,
                 VerboseLoadingCancelledLogging = false,
-                Logger = new CustomLogger(),
+				//HttpClient = httpClient,
+				Logger = new CustomLogger(),
             };
             ImageService.Instance.Initialize(config);
 
