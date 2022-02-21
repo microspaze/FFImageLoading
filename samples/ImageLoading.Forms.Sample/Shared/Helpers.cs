@@ -31,6 +31,9 @@ namespace FFImageLoading.Forms.Sample
 
 		public static List<string> Images = new List<string>
 		{
+			"https://gastaticqn.gatime.cn/1.sm.webp",
+			"https://dev.w3.org/SVG/tools/svgweb/samples/svg-files/duke.svg",
+
 			"https://gastaticqn.gatime.cn/photo.jpg",
 			"https://gastaticqn.gatime.cn/xh_DSC1193.jpg",
 			"https://gastaticqn.gatime.cn/BARROCK.jpg",
