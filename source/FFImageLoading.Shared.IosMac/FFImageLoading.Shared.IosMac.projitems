@@ -25,7 +25,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Work\PlatformImageLoaderTask.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Decoders\BaseDecoder.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Decoders\GifDecoder.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Decoders\WebPDecoder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Cache\" />
