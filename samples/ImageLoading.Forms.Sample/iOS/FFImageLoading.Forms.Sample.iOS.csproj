@@ -74,12 +74,15 @@
     <MtouchLink>None</MtouchLink>
     <MtouchInterpreter>-all</MtouchInterpreter>
     <MtouchNoSymbolStrip>false</MtouchNoSymbolStrip>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
     <AppExtensionDebugBundleId />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="OpenTK-1.0" />
     <Reference Include="System" />
+    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -188,12 +191,10 @@
       <UserProperties XamarinHotReloadXFormsNugetUpgradeInfoBarFFImageLoadingFormsSampleiOSHideInfoBar="True" />
     </VisualStudio>
   </ProjectExtensions>
-  <Import Project="..\..\..\packages\SkiaSharp.2.80.3\build\xamarinios1.0\SkiaSharp.targets" Condition="Exists('..\..\..\packages\SkiaSharp.2.80.3\build\xamarinios1.0\SkiaSharp.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\..\packages\SkiaSharp.2.80.3\build\xamarinios1.0\SkiaSharp.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\SkiaSharp.2.80.3\build\xamarinios1.0\SkiaSharp.targets'))" />
     <Error Condition="!Exists('..\..\..\packages\Xamarin.Forms.5.0.0.2337\build\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Xamarin.Forms.5.0.0.2337\build\Xamarin.Forms.props'))" />
     <Error Condition="!Exists('..\..\..\packages\Xamarin.Forms.5.0.0.2337\build\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\..\packages\Xamarin.Forms.5.0.0.2337\build\Xamarin.Forms.targets'))" />
   </Target>
