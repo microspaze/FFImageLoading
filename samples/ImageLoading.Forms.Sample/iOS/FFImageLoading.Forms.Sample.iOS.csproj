@@ -170,10 +170,10 @@
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\testasset.imageset\Contents.json">
+    <ImageAsset Include="Resources\Images.xcassets\Images.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <ImageAsset Include="Resources\Images.xcassets\testasset.imageset\loadingg.png">
+    <ImageAsset Include="Resources\Images.xcassets\Images.imageset\loadingg.png">
       <Visible>false</Visible>
     </ImageAsset>
   </ItemGroup>
@@ -243,6 +243,9 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\loading2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Icon60.png" />
   </ItemGroup>
   <ProjectExtensions>
     <VisualStudio>
