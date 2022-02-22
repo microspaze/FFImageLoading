@@ -15,7 +15,7 @@ namespace FFImageLoading.Forms.Sample
 
 			ErrorPlaceholderCommand = new BaseCommand((arg) =>
 			{
-				ImageUrl = "https://gastaticqn.gatime.cn/notexisting.jpg";
+				ImageUrl = "https://gastaticqn.gatime.cn/notexisting2.jpg";
 			});
 		}
 
@@ -23,6 +23,6 @@ namespace FFImageLoading.Forms.Sample
 
 		public ICommand ErrorPlaceholderCommand { get; set; }
 
-		public string ImageUrl { get; set; }
+		public string ImageUrl { get; set; } = Helpers.GetRandomImageUrl();
 	}
 }

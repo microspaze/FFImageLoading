@@ -7,12 +7,30 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
+                <Label Text="Original" HorizontalTextAlignment="Center"/>
 
+                <ffimageloading:CachedImage HorizontalOptions="Center" VerticalOptions="Center"
+                    LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png" DownsampleToViewSize="true"
+                    Aspect="AspectFit" HeightRequest="400" WidthRequest="400" Source="{Binding ImageUrl}">
+                </ffimageloading:CachedImage>
+
+                <Label Text="Horizontal Flipped" HorizontalTextAlignment="Center"/>
+                
                 <ffimageloading:CachedImage HorizontalOptions="Center" VerticalOptions="Center"
                     LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png" DownsampleToViewSize="true"
                     Aspect="AspectFit" HeightRequest="400" WidthRequest="400" Source="{Binding ImageUrl}">
                     <ffimageloading:CachedImage.Transformations>
                         <fftransformations:FlipTransformation FlipType="Horizontal"/>
+                    </ffimageloading:CachedImage.Transformations>
+                </ffimageloading:CachedImage>
+
+                <Label Text="Vertical Flipped" HorizontalTextAlignment="Center"/>
+
+                <ffimageloading:CachedImage HorizontalOptions="Center" VerticalOptions="Center"
+                    LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png" DownsampleToViewSize="true"
+                    Aspect="AspectFit" HeightRequest="400" WidthRequest="400" Source="{Binding ImageUrl}">
+                    <ffimageloading:CachedImage.Transformations>
+                        <fftransformations:FlipTransformation FlipType="Vertical"/>
                     </ffimageloading:CachedImage.Transformations>
                 </ffimageloading:CachedImage>
 

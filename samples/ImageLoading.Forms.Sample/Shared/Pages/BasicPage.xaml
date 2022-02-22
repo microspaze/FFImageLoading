@@ -5,8 +5,21 @@
         xmlns:fftransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
         Title="Basic">
     <ContentPage.Content>
-        <ffimageloading:CachedImage WidthRequest="300" HeightRequest="300"
-            DownsampleToViewSize="true" Source="{Binding ImageUrl}">
-        </ffimageloading:CachedImage>
+        <StackLayout>
+            <ffimageloading:CachedImage WidthRequest="200" HeightRequest="200"
+                                        DownsampleToViewSize="true" Source="{Binding ImageUrl}"/>
+
+            <Label Text="Load With Error Placeholder" HorizontalTextAlignment="Center"/>
+
+            <ffimageloading:CachedImage WidthRequest="100" HeightRequest="100"
+                                        LoadingPlaceholder="loading.png" ErrorPlaceholder="error.png"
+                                        DownsampleToViewSize="true" Source="https://gastaticqn.gatime.cn/fengjing.png"/>
+
+            <Label Text="Load Without Error Placeholder" HorizontalTextAlignment="Center"/>
+
+            <ffimageloading:CachedImage WidthRequest="100" HeightRequest="100"
+                                        LoadingPlaceholder="loading.png"
+                                        DownsampleToViewSize="true" Source="https://gastaticqn.gatime.cn/fengjing.png"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
