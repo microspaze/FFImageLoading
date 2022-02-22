@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleDisplayName</key>
-	<string>FFImageLoading.Forms.Sample</string>
+	<string>FFImageLoading.Forms</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.i7chi.xfimage</string>
 	<key>CFBundleShortVersionString</key>
